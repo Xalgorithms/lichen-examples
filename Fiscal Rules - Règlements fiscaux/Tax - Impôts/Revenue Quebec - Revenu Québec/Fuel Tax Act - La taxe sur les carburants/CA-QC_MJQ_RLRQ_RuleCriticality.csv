@@ -1,0 +1,4 @@
+RuleCriticalityRank,RuleCriticalityKeyword,RuleCriticalityMeaning
+1,imperative,must always be active
+2,business,must be active to uptime guaranteed tolerances
+3,experimental,may be deactivated to support business and imperative requirements
