@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--2017-05-11 20:30z GasTaxExample return values-->
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+  xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+  xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionAgencyName>Internet of Rules</ext:ExtensionAgencyName>
+      <ext:ExtensionReason languageID="en"
+>Report of the list of rules having been applied to the content</ext:ExtensionReason>
+      <ext:ExtensionContent>
+        <ior:Record xmlns:ior="http://internetofrules.org/ns/reportlog">
+2017-05-11 20:30z
+Rules applied:
+    CANADA_GST
+    QUEBEC_QST
+    QUEBEC_BORDER_GAS_TAX_REDUCTION
+    TAX_TOTAL
+</ior:Record>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:ID>1234</cbc:ID>
+  <cbc:IssueDate>2017-05-10</cbc:IssueDate>
+  <cac:AccountingSupplierParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID>Bob's Petrol Station</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyIdentification>
+        <cbc:ID schemeName="ISIC">50</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyIdentification>
+        <cbc:ID schemeName="ISIC-NAME">Retail Sale of Automotive Fuel</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyIdentification>
+        <cbc:ID>123</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name>Bob's Petrol Station</cbc:Name>
+      </cac:PartyName>
+      <cac:PhysicalLocation>
+        <cbc:ID schemeURI="http://openlocationcode.org">G123456</cbc:ID>
+      </cac:PhysicalLocation>
+    </cac:Party>
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID>Cash</cbc:ID>
+      </cac:PartyIdentification>
+    </cac:Party>
+  </cac:AccountingCustomerParty>
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="CAD">1.60</cbc:TaxAmount>
+    <cbc:RoundingAmount currencyID="CAD">0.0025</cbc:RoundingAmount>
+    <cac:TaxSubtotal>
+      <cbc:TaxableAmount currencyID="CAD">10.00</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="CAD">0.50</cbc:TaxAmount>
+      <cbc:Percent>5</cbc:Percent>
+      <cac:TaxCategory>
+        <cac:TaxScheme>
+          <cbc:ID>GST</cbc:ID>
+          <cbc:Name>GST</cbc:Name>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+    <cac:TaxSubtotal>
+      <cbc:TaxableAmount currencyID="CAD">10.00</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="CAD">0.9975</cbc:TaxAmount>
+      <cbc:Percent>9.975</cbc:Percent>
+      <cac:TaxCategory>
+        <cac:TaxScheme>
+          <cbc:ID>QST</cbc:ID>
+          <cbc:Name>QST</cbc:Name>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+    <cac:TaxSubtotal>
+      <cbc:TaxAmount currencyID="CAD">-0.40</cbc:TaxAmount>
+      <cbc:BaseUnitMeasure unitCode="LTR">1</cbc:BaseUnitMeasure>
+      <cbc:PerUnitAmount currencyID="CAD">-0.04</cbc:PerUnitAmount>
+      <cac:TaxCategory>
+        <cac:TaxScheme>
+          <cbc:ID>QUEBEC_BORDER_GAS_TAX_CREDIT</cbc:ID>
+          <cbc:Name>Québec Border Gas Tax Credit</cbc:Name>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+  </cac:TaxTotal>
+  <cac:LegalMonetaryTotal>
+    <cbc:TaxExclusiveAmount currencyID="CAD">10.00</cbc:TaxExclusiveAmount>
+    <cbc:PayableAmount currencyID="CAD">11.60</cbc:PayableAmount>
+  </cac:LegalMonetaryTotal>
+  <cac:InvoiceLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="LTR">10</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="CAD">10.00</cbc:LineExtensionAmount>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="CAD">1.60</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="CAD">0.0025</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="CAD">10.00</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="CAD">0.50</cbc:TaxAmount>
+        <cbc:Percent>5</cbc:Percent>
+        <cac:TaxCategory>
+          <cac:TaxScheme>
+            <cbc:ID>GST</cbc:ID>
+            <cbc:Name>GST</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="CAD">10.00</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="CAD">0.9975</cbc:TaxAmount>
+        <cbc:Percent>9.975</cbc:Percent>
+        <cac:TaxCategory>
+          <cac:TaxScheme>
+            <cbc:ID>QST</cbc:ID>
+            <cbc:Name>QST</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+      <cac:TaxSubtotal>
+        <cbc:TaxAmount currencyID="CAD">-.40</cbc:TaxAmount>
+        <cbc:BaseUnitMeasure unitCode="LTR">1</cbc:BaseUnitMeasure>
+        <cbc:PerUnitAmount currencyID="CAD">-0.04</cbc:PerUnitAmount>
+        <cac:TaxCategory>
+          <cac:TaxScheme>
+            <cbc:ID>QUEBEC_BORDER_GAS_TAX_CREDIT</cbc:ID>
+            <cbc:Name>Québec Border Gas Tax Credit</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>Regular Gas</cbc:Description>
+      <cac:CommodityClassification>
+        <cbc:ItemClassificationCode listName="UNSPSC">506505</cbc:ItemClassificationCode>
+      </cac:CommodityClassification>
+      <cac:AdditionalItemProperty>
+        <cbc:ID>UNSPSC-NAME</cbc:ID>
+        <cbc:Name languageID="EN">Gasoline and Petrol</cbc:Name>
+      </cac:AdditionalItemProperty>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="CAD">1.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="LTR">1</cbc:BaseQuantity>
+    </cac:Price>
+    <cac:ItemPriceExtension>
+      <cbc:Amount currencyID="CAD">10.00</cbc:Amount>
+    </cac:ItemPriceExtension>
+  </cac:InvoiceLine>
+</Invoice>
