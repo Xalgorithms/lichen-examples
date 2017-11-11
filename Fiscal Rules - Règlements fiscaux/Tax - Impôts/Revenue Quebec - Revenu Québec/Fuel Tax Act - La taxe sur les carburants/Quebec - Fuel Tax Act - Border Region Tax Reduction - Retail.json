@@ -1,0 +1,229 @@
+[
+   {
+      "step": "ABOUT THIS RULE"
+   },
+   {
+      "subject": "xalgo"
+   },
+   {
+      "target1": "version",
+      "value": "0.1.0"
+   },
+   {
+      "subject": "rule"
+   },
+   {
+      "target1": "id",
+      "value": "10.1010101010.0001",
+      "comment": "DOI, ITU X.1255"
+   },
+   {
+      "target1": "version",
+      "value": "0.1.0"
+   },
+   {
+      "target1": "xquery",
+      "value": 3.1
+   },
+   {
+      "target1": "jurisdiction",
+      "value": "CA-QC",
+      "comment": "ISO 3166-2 Governed by and construed in accordance with the laws of the named jurisdiction."
+   },
+   {
+      "target1": "name"
+   },
+   {
+      "target2": "english",
+      "value": "Quebec, Fuel Tax Act, Border Region Tax Reduction, Retail"
+   },
+   {
+      "target2": "français",
+      "value": "Québec, Loi de la taxe sur les carburants, réduction fiscale de la région frontalière, détail"
+   },
+   {
+      "target1": "url",
+      "value": "http://legisquebec.gouv.qc.ca/en/ShowDoc/cr/T-1,%20r.%201#se:2r3"
+   },
+   {
+      "target1": "effective"
+   },
+   {
+      "target2": "starts",
+      "value": "2017-01-01T00:00:00+00:01",
+      "comment": "ISO 8601"
+   },
+   {
+      "target2": "ends",
+      "value": "9999-12-31T23:59:59+99:99"
+   },
+   {
+      "target1": "criticality",
+      "value": 3
+   },
+   {
+      "target1": "manager",
+      "value": "foo@bar.com",
+      "comment": "email"
+   },
+   {
+      "target1": "author",
+      "value": "foo@bar.com",
+      "comment": "email"
+   },
+   {
+      "target1": "committer",
+      "value": "foo@bar.com",
+      "comment": "email"
+   },
+   {
+      "step": "METADATA REQUIRED"
+   },
+   {
+      "subject": "context"
+   },
+   {
+      "target1": "type",
+      "comment": "UBL DocumentType"
+   },
+   {
+      "target1": "jurisdiction",
+      "comment": "ISO 3166-2 in UBL PartyTaxScheme TaxScheme JurisdictionRegionAddress"
+   },
+   {
+      "target1": "issuedate_issuetime",
+      "comment": "ISO 8601 in UBL IssueDate and IssueTime"
+   },
+   {
+      "subject": "seller"
+   },
+   {
+      "target1": "id",
+      "comment": "Le numéro d’entreprise du Québec / Québec Enterprise Number (NEQ) in UBL: SellerSupplierParty"
+   },
+   {
+      "target1": "province",
+      "comment": "ISO 3166-2 CountrySubentityCode in UBL: PartyLegalEntity CorporateRegistrationScheme JurisdictionRegionAddress"
+   },
+   {
+      "target1": "industry",
+      "comment": "ISIC: International Standard Industry Classification"
+   },
+   {
+      "subject": "item"
+   },
+   {
+      "target1": "classification",
+      "comment": "UBL: ItemClassificationCode, UNSPSC"
+   },
+   {
+      "target1": "quantity",
+      "comment": "UBL: InvoicedQuantity"
+   },
+   {
+      "target1": "unit",
+      "comment": "UBL: BaseUnitMeasure"
+   },
+   {
+      "step": "VALUES TO FILTER"
+   },
+   {
+      "subject": "context"
+   },
+   {
+      "target1": "type",
+      "value": "invoice OR purchase_order"
+   },
+   {
+      "target1": "jurisdiction",
+      "value": "CA-QC"
+   },
+   {
+      "target1": "issuedate&issuetime",
+      "value": "GT rule.effective.starts AND LT rule.effective.ends"
+   },
+   {
+      "subject": "seller"
+   },
+   {
+      "target1": "id"
+   },
+   {
+      "target1": "province",
+      "value": "CA-QC"
+   },
+   {
+      "target1": "industry",
+      "value": 4730
+   },
+   {
+      "subject": "item"
+   },
+   {
+      "target1": "classification",
+      "value": 506505
+   },
+   {
+      "target1": "quantity",
+      "value": "GT 0 AND !null"
+   },
+   {
+      "target1": "unit",
+      "value": "litres"
+   },
+   {
+      "step": "ACTIONS TO PERFORM"
+   },
+   {
+      "subject": "obtain"
+   },
+   {
+      "target1": "use",
+      "value": "transaction.party.seller.id"
+   },
+   {
+      "target1": "lookup",
+      "value": "CA-QC_MJQ_RLRQ_T-1_r1_2R3(a)_DistanceRegister.json"
+   },
+   {
+      "target1": "criteria",
+      "value": "seller.id EQ EffectiveUserID"
+   },
+   {
+      "target1": "obtain",
+      "value": "distance"
+   },
+   {
+      "target1": "use",
+      "value": "distance "
+   },
+   {
+      "target1": "lookup",
+      "value": "CA-QC_MJQ_RLRQ_T-1_r1_2R3(a)_ReductionPerLitre.json"
+   },
+   {
+      "target1": "criteria",
+      "value": "distance LE 2R3(a)_Distance"
+   },
+   {
+      "target1": "obtain",
+      "value": "reduction"
+   },
+   {
+      "subject": "compute"
+   },
+   {
+      "target1": "action",
+      "value": "apply"
+   },
+   {
+      "target1": "formula",
+      "value": "multiply"
+   },
+   {
+      "target1": "arguments",
+      "value": "item.quantity, reduction"
+   }
+]
+
+

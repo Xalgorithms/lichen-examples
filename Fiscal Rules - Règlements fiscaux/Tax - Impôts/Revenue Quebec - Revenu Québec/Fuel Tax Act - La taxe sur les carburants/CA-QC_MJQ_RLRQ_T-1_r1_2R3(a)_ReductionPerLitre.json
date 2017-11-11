@@ -1,0 +1,22 @@
+[
+   {
+      "Distance": 20,
+      "ReductionPerLitre": 0
+   },
+   {
+      "Distance": 15,
+      "ReductionPerLitre": -0.02
+   },
+   {
+      "Distance": 10,
+      "ReductionPerLitre": -0.04
+   },
+   {
+      "Distance": 5,
+      "ReductionPerLitre": -0.06
+   },
+   {
+      "Distance": "0",
+      "ReductionPerLitre": -0.08
+   }
+]

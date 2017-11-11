@@ -1,0 +1,60 @@
+step,subject,target1,target2,value,comment
+ABOUT THIS RULE,,,,,
+,xalgo,,,,
+,,version,,0.1.0,
+,rule,,,,
+,,id,,10.1010101010.0001,"DOI, ITU X.1255"
+,,version,,0.1.0,
+,,xquery,,3.1,
+, ,jurisdiction,,CA-QC,ISO 3166-2 Governed by and construed in accordance with the laws of the named jurisdiction.
+,,name,,,
+,,,english,"Quebec, Fuel Tax Act, Border Region Tax Reduction, Retail",
+,,,français,"Québec, Loi de la taxe sur les carburants, réduction fiscale de la région frontalière, détail",
+,,url,,"http://legisquebec.gouv.qc.ca/en/ShowDoc/cr/T-1,%20r.%201#se:2r3",
+,,effective,,,
+,,,starts,2017-01-01T00:00:00+00:01,ISO 8601
+,,,ends,9999-12-31T23:59:59+99:99,
+,,criticality,,3,
+,,manager,,foo@bar.com,email
+,,author,,foo@bar.com,email
+,,committer,,foo@bar.com,email
+METADATA REQUIRED,,,,,
+,context,,,,
+,,type,,,UBL DocumentType
+,,jurisdiction,,,ISO 3166-2 in UBL PartyTaxScheme TaxScheme JurisdictionRegionAddress
+,,issuedate_issuetime,,,ISO 8601 in UBL IssueDate and IssueTime
+,seller,,,,
+,,id,,,Le numéro d’entreprise du Québec / Québec Enterprise Number (NEQ) in UBL: SellerSupplierParty
+,,province,,,ISO 3166-2 CountrySubentityCode in UBL: PartyLegalEntity CorporateRegistrationScheme JurisdictionRegionAddress
+,,industry,,,ISIC: International Standard Industry Classification
+,item,,,,
+,,classification,,,"UBL: ItemClassificationCode, UNSPSC"
+,,quantity,,,UBL: InvoicedQuantity
+,,unit,,,UBL: BaseUnitMeasure
+VALUES TO FILTER,,,,,
+,context,,,,
+,,type,,invoice OR purchase_order,
+,,jurisdiction,,CA-QC,
+,,issuedate&issuetime,,GT rule.effective.starts AND LT rule.effective.ends,
+,seller,,,,
+,,id,,,
+,,province,,CA-QC,
+,,industry,,4730,
+,item,,,,
+,,classification,,506505,
+,,quantity,,GT 0 AND !null,
+,,unit,,litres,
+ACTIONS TO PERFORM,,,,,
+,obtain,,,,
+,,use,,transaction.party.seller.id,
+,,lookup,,CA-QC_MJQ_RLRQ_T-1_r1_2R3(a)_DistanceRegister.json,
+,,criteria,,seller.id EQ EffectiveUserID,
+,,obtain,,distance,
+,,use,,distance ,
+,,lookup,,CA-QC_MJQ_RLRQ_T-1_r1_2R3(a)_ReductionPerLitre.json,
+,,criteria,,distance LE 2R3(a)_Distance,
+,,obtain,,reduction,
+,compute,,,,
+,,action,,apply,
+,,formula,,multiply,
+,,arguments,,"item.quantity, reduction",

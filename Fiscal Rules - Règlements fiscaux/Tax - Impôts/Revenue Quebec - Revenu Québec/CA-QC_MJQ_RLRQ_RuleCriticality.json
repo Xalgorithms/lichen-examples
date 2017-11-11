@@ -1,0 +1,17 @@
+[
+   {
+      "RuleCriticalityRank": 1,
+      "RuleCriticalityKeyword": "imperative",
+      "RuleCriticalityMeaning": "must always be active"
+   },
+   {
+      "RuleCriticalityRank": 2,
+      "RuleCriticalityKeyword": "business",
+      "RuleCriticalityMeaning": "must be active to uptime guaranteed tolerances"
+   },
+   {
+      "RuleCriticalityRank": 3,
+      "RuleCriticalityKeyword": "experimental",
+      "RuleCriticalityMeaning": "may be deactivated to support business and imperative requirements"
+   }
+]
