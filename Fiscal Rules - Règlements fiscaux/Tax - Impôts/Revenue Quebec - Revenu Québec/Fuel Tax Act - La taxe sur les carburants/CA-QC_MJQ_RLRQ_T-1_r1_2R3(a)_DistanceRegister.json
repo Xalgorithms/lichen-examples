@@ -1,4 +1,95 @@
+
 [
+   {
+      "step": "ABOUT THIS TABLE"
+   },
+   {
+      "subject": "xalgo",
+      "mdata_fieldname": "version",
+      "mdata_value": "0.1.1",
+      "comment": "http://semver.org/"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldname": "id",
+      "mdata_value": "10.1010101010.0002",
+      "comment": "DOI, ITU X.1255"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldname": "version",
+      "mdata_value": "0.1.0",
+      "comment": "http://semver.org/"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldname": "jurisdiction",
+      "mdata_value": "CA-QC",
+      "comment": "ISO 3166-2 Governed by and construed in accordance with the laws of the named jurisdiction."
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "name",
+      "mdata_fieldname": "english",
+      "mdata_value": "DistanceRegister",
+      "comment": "Quebec, Fuel Tax Act, Border Region Tax Reduction, Retail"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "name",
+      "mdata_fieldname": "français",
+      "mdata_value": "Registre des déplacements",
+      "comment": "Québec, Loi de la taxe sur les carburants, réduction fiscale de la région frontalière, détail"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldname": "url",
+      "mdata_value": "http://www.revenuquebec.ca/fr/entreprises/ras/casparticuliers/typesremu/avantagesimposables/vehmoteur/avantage-registredeplacements.aspx"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "effective",
+      "mdata_fieldname": "starts",
+      "mdata_value": "2017-01-01T00:00:00+00:01",
+      "comment": "ISO 8601"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "effective",
+      "mdata_fieldname": "ends",
+      "mdata_value": "9999-12-31T23:59:59+99:99",
+      "comment": "ISO 8601"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldname": "criticality",
+      "mdata_value": 3,
+      "comment": "CA-QC_MJQ_RLRQ_RuleCriticality.json"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "contact",
+      "mdata_fieldname": "manager",
+      "mdata_value": "jpotvin@xalgorithms.org",
+      "comment": "email"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "contact",
+      "mdata_fieldname": "author",
+      "mdata_value": "http://www.opman.ca/aboutus",
+      "comment": "url"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "contact",
+      "mdata_fieldname": "committer",
+      "mdata_value": "jpotvin",
+      "comment": "git_id"
+   },
+   {
+      "step": "VALUES"
+   },
    {
       "EffectiveUserID": "us5uQgVJD5UFOQH",
       "SellerSupplierParty": "l'Essence Chez Bob",
@@ -50,6 +141,5 @@
       "Distance": 16.6
    }
 ]
-
 
 
