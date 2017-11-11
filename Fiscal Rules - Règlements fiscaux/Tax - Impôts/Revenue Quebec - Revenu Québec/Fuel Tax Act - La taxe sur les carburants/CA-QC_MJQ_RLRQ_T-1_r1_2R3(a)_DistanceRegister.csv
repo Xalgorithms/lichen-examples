@@ -1,11 +1,11 @@
-2R3(a)_Distance, SellerSupplierParty,(gas stations),2R3(a)_Distance
-16.1, l'Essence Chez Bob,us5uQgVJD5UFOQH,16.1
-11.3, Ultramar #122,QRpOeZ7UXni9In5,11.3
-2.7," Canadien Tire, Le Plateau",54JGpXKSaSOjQVN,2.7
-5.3, Shell 392271,earqiEh6gbxf1mM,5.3
-19.9, PetroCanada-Franchise31, T9XxzFbpxvBEzRx,19.9
-3.3," Esso 428 Maloney, Gatineau", XapDFDwg0w6taRQ,3.3
-13.8, Depanneur Chelsea, Y9Rrpsi9t4zaAEq,13.8
-19.8, Pioneer 2688 St Joseph, kUlkUY3JzpyHKEj,19.8
-1.3, Hetco @ Gréber & Saint-Louis, fScl51V5VE0ZBpE,2.3
-16.6, Couche-Tard (Vanier & Allumettières),cuzXbCvmQruHaD4,17.6
+EffectiveUserID,SellerSupplierParty,Distance
+us5uQgVJD5UFOQH,l'Essence Chez Bob,16.1
+QRpOeZ7UXni9In5,Ultramar #122,11.3
+54JGpXKSaSOjQVN,"Canadien Tire, Le Plateau",2.7
+earqiEh6gbxf1mM,Shell 392271,5.3
+T9XxzFbpxvBEzRx,PetroCanada-Franchise31,19.9
+XapDFDwg0w6taRQ,"Esso 428 Maloney, Gatineau",3.3
+Y9Rrpsi9t4zaAEq,Depanneur Chelsea,13.8
+kUlkUY3JzpyHKEj,Pioneer 2688 St Joseph,19.8
+fScl51V5VE0ZBpE,Hetco @ Gréber & Saint-Louis,1.3
+cuzXbCvmQruHaD4,Couche-Tard (Vanier & Allumettières),16.6
