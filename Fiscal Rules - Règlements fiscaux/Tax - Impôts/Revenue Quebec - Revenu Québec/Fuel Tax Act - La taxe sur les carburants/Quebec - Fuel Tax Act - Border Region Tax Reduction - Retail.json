@@ -39,7 +39,21 @@
    },
    {
       "subject": "rule",
-      "value": "http://legisquebec.gouv.qc.ca/en/ShowDoc/cr/T-1,%20r.%201#se:2r3"
+      "fieldnamegroup": "url",
+      "value": "http://legisquebec.gouv.qc.ca/en/ShowDoc/cr/T-1,%20r.%201",
+      "comment": "Official"
+   },
+   {
+      "subject": "rule",
+      "fieldnamegroup": "url",
+      "value": "http://legisquebec.gouv.qc.ca/fr/ShowDoc/cr/T-1,%20r.%201",
+      "comment": "Official"
+   },
+   {
+      "subject": "rule",
+      "fieldnamegroup": "url",
+      "value": "https://github.com/Xalgorithms/lichen-examples/tree/master/Fiscal%20Rules%20-%20R%C3%A8glements%20fiscaux/Tax%20-%20Imp%C3%B4ts/Revenue%20Quebec%20-%20Revenu%20Qu%C3%A9bec/Fuel%20Tax%20Act%20-%20La%20taxe%20sur%20les%20carburants",
+      "comment": "Unofficial "
    },
    {
       "subject": "rule",
@@ -60,19 +74,19 @@
    },
    {
       "subject": "rule",
-      "fieldnamegroup": "contact",
+      "fieldnamegroup": "code",
       "value": "jpotvin@xalgorithms.org",
       "comment": "email"
    },
    {
       "subject": "rule",
-      "fieldnamegroup": "contact",
+      "fieldnamegroup": "code",
       "value": "http://www.opman.ca/aboutus",
       "comment": "url"
    },
    {
       "subject": "rule",
-      "fieldnamegroup": "contact",
+      "fieldnamegroup": "code",
       "value": "jpotvin",
       "comment": "git_id"
    },
@@ -150,8 +164,7 @@
       "value": "GT 0"
    },
    {
-      "subject": "item",
-      "value": "litres"
+      "subject": "item"
    },
    {
       "step": "ACTIONS TO PERFORM"
@@ -212,7 +225,5 @@
       "fieldname": "item.quantity, reduction"
    }
 ]
-
-
 
 

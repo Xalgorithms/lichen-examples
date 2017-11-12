@@ -1,4 +1,21 @@
-RuleCriticalityRank,RuleCriticalityKeyword,RuleCriticalityMeaning
-1,imperative,must always be active
-2,business,must be active to uptime guaranteed tolerances
-3,experimental,may be deactivated to support business and imperative requirements
+step,subject,mdata_fieldnamegroup,mdata_fieldname,mdata_value,RuleCriticalityRank,RuleCriticalityKeyword,RuleCriticalityMeaning,comment
+ABOUT THIS TABLE,,,,,,,,
+,xalgo,,version,0.1.1,,,,http://semver.org/
+,table,,id,10.1010101010.0005,,,,"DOI, ITU X.1255"
+,table,,version,0.1.0,,,,http://semver.org/
+,table,,jurisdiction,CA-QC,,,,ISO 3166-2 Governed by and construed in accordance with the laws of the named jurisdiction.
+,table,name,english,Rule Criticality,,,,Identification of the company and its representative
+,table,name,français,La criticité de règle,,,,Identification de l'entreprise et de son représentant
+,table,url,english,https://www.economie.gouv.qc.ca/objectifs/ameliorer/formation-et-perfectionnement/page/guides-et-outils-12828/?tx_igaffichagepages_pi1%5Bmode%5D=single&tx_igaffichagepages_pi1%5BbackPid%5D=31&tx_igaffichagepages_pi1%5BcurrentCat%5D=&cHash=ad972f8cee5d1fc0cf1cc53c867558,,,,Available in French only.  
+,table,url,français,https://www.economie.gouv.qc.ca/objectifs/ameliorer/formation-et-perfectionnement/page/guides-et-outils-12828/?tx_igaffichagepages_pi1%5Bmode%5D=single&tx_igaffichagepages_pi1%5BbackPid%5D=31&tx_igaffichagepages_pi1%5BcurrentCat%5D=&cHash=ad972f8cee5d1fc0cf1cc53c867558,,,,Official
+,table,url,json,https://github.com/Xalgorithms/lichen-examples/tree/master/Fiscal%20Rules%20-%20R%C3%A8glements%20fiscaux/Tax%20-%20Imp%C3%B4ts/Revenue%20Quebec%20-%20Revenu%20Qu%C3%A9bec,,,,Unofficial 
+,table,effective,starts,2017-01-01T00:00:00+00:01,,,,ISO 8601
+,table,effective,ends,9999-12-31T23:59:59+99:99,,,,ISO 8601
+,table,,criticality,3,,,,CA-QC_MJQ_RLRQ_RuleCriticality.json
+,table,code,manager,jpotvin@xalgorithms.org,,,,email
+,table,code,author,http://www.opman.ca/aboutus,,,,url
+,table,code,committer,jpotvin,,,,git_id
+VALUES,,,,,,,,
+,,,,,1,imperative,must always be active,
+,,,,,2,business,must be active to uptime guaranteed tolerances,
+,,,,,3,experimental,may be deactivated to support business and imperative requirements,

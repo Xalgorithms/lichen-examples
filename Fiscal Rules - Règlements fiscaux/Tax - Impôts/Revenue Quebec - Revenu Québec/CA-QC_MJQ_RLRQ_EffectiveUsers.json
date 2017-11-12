@@ -1,37 +1,146 @@
+
 [
    {
+      "step": "ABOUT THIS TABLE"
+   },
+   {
+      "subject": "xalgo",
+      "mdata_fieldname": "version",
+      "mdata_value": "0.1.1",
+      "comment": "http://semver.org/"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldname": "id",
+      "mdata_value": "10.1010101010.0004",
+      "comment": "DOI, ITU X.1255"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldname": "version",
+      "mdata_value": "0.1.0",
+      "comment": "http://semver.org/"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldname": "jurisdiction",
+      "mdata_value": "CA-QC",
+      "comment": "ISO 3166-2 Governed by and construed in accordance with the laws of the named jurisdiction."
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "name",
+      "mdata_fieldname": "english",
+      "mdata_value": "Effective Users",
+      "comment": "Identification of the company and its representative"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "name",
+      "mdata_fieldname": "français",
+      "mdata_value": "Utilisateurs réels",
+      "comment": "Identification de l'entreprise et de son représentant"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "url",
+      "mdata_fieldname": "english",
+      "mdata_value": "http://www.revenuquebec.ca/en/representant-professionnel/default.aspx",
+      "comment": "Available in French only.  "
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "url",
+      "mdata_fieldname": "français",
+      "mdata_value": "http://www.revenuquebec.ca/fr/representant-professionnel/mon-dossier/representant-pro-plus/comment-inscrire-identification.aspx",
+      "comment": "Official"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "url",
+      "mdata_fieldname": "json",
+      "mdata_value": "https://github.com/Xalgorithms/lichen-examples/tree/master/Fiscal%20Rules%20-%20R%C3%A8glements%20fiscaux/Tax%20-%20Imp%C3%B4ts/Revenue%20Quebec%20-%20Revenu%20Qu%C3%A9bec",
+      "comment": "Unofficial "
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "effective",
+      "mdata_fieldname": "starts",
+      "mdata_value": "2017-01-01T00:00:00+00:01",
+      "comment": "ISO 8601"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "effective",
+      "mdata_fieldname": "ends",
+      "mdata_value": "9999-12-31T23:59:59+99:99",
+      "comment": "ISO 8601"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldname": "criticality",
+      "mdata_value": 3,
+      "comment": "CA-QC_MJQ_RLRQ_RuleCriticality.json"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "code",
+      "mdata_fieldname": "manager",
+      "mdata_value": "jpotvin@xalgorithms.org",
+      "comment": "email"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "code",
+      "mdata_fieldname": "author",
+      "mdata_value": "http://www.opman.ca/aboutus",
+      "comment": "url"
+   },
+   {
+      "subject": "table",
+      "mdata_fieldnamegroup": "code",
+      "mdata_fieldname": "committer",
+      "mdata_value": "jpotvin",
+      "comment": "git_id"
+   },
+   {
+      "step": "VALUES"
+   },
+   {
       "EffectiveUserID": "qJUgMVukff0YZfC",
-      "EffectiveUserCommunicationsChannel": "sms",
-      " EffectiveUserCommunicationsString": "011-1-819-593-5983"
+      "CommsChannel": "sms",
+      "CommsString": "011-1-819-593-5983"
    },
    {
       "EffectiveUserID": "t079WCDPL2Y4ACy",
-      "EffectiveUserCommunicationsChannel": "email",
-      " EffectiveUserCommunicationsString": "jpotvin@opman.ca"
+      "CommsChannel": "email",
+      "CommsString": "jpotvin@opman.ca"
    },
    {
       "EffectiveUserID": "oF9TDiUzrponyhj",
-      "EffectiveUserCommunicationsChannel": "twitter",
-      " EffectiveUserCommunicationsString": "@jrpotvin"
+      "CommsChannel": "twitter",
+      "CommsString": "@jrpotvin"
    },
    {
       "EffectiveUserID": "VJh82YU76Uyfceq",
-      "EffectiveUserCommunicationsChannel": "email",
-      " EffectiveUserCommunicationsString": "wolders@xalgorithms.org"
+      "CommsChannel": "email",
+      "CommsString": "wolders@xalgorithms.org"
    },
    {
       "EffectiveUserID": "GTksmVZaSJVMWkP",
-      "EffectiveUserCommunicationsChannel": "email",
-      " EffectiveUserCommunicationsString": "karfai@gmail.com"
+      "CommsChannel": "email",
+      "CommsString": "karfai@gmail.com"
    },
    {
       "EffectiveUserID": "us5uQgVJD5UFOQH",
-      "EffectiveUserCommunicationsChannel": "email",
-      " EffectiveUserCommunicationsString": "tigran@aobyte.com"
+      "CommsChannel": "email",
+      "CommsString": "tigran@aobyte.com"
    },
    {
       "EffectiveUserID": "QRpOeZ7UXni9In5",
-      "EffectiveUserCommunicationsChannel": "email",
-      " EffectiveUserCommunicationsString": "haykp@aobyte.com"
+      "CommsChannel": "email",
+      "CommsString": "haykp@aobyte.com"
    }
 ]
+
+

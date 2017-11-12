@@ -6,13 +6,15 @@ ABOUT THIS TABLE,,,,,,,,
 ,table,,jurisdiction,CA-QC,,,,ISO 3166-2 Governed by and construed in accordance with the laws of the named jurisdiction.
 ,table,name,english,DistanceRegister,,,,"Quebec, Fuel Tax Act, Border Region Tax Reduction, Retail"
 ,table,name,français,Registre des déplacements,,,,"Québec, Loi de la taxe sur les carburants, réduction fiscale de la région frontalière, détail"
-,table,,url,http://www.revenuquebec.ca/fr/entreprises/ras/casparticuliers/typesremu/avantagesimposables/vehmoteur/avantage-registredeplacements.aspx,,,,
+,table,url,english,"http://legisquebec.gouv.qc.ca/en/ShowDoc/cr/T-1,%20r.%201",,,,Official
+,table,url,français,"http://legisquebec.gouv.qc.ca/fr/ShowDoc/cr/T-1,%20r.%201",,,,Official
+,table,url,json,https://github.com/Xalgorithms/lichen-examples/tree/master/Fiscal%20Rules%20-%20R%C3%A8glements%20fiscaux/Tax%20-%20Imp%C3%B4ts/Revenue%20Quebec%20-%20Revenu%20Qu%C3%A9bec/Fuel%20Tax%20Act%20-%20La%20taxe%20sur%20les%20carburants,,,,Unofficial 
 ,table,effective,starts,2017-01-01T00:00:00+00:01,,,,ISO 8601
 ,table,effective,ends,9999-12-31T23:59:59+99:99,,,,ISO 8601
 ,table,,criticality,3,,,,CA-QC_MJQ_RLRQ_RuleCriticality.json
-,table,contact,manager,jpotvin@xalgorithms.org,,,,email
-,table,contact,author,http://www.opman.ca/aboutus,,,,url
-,table,contact,committer,jpotvin,,,,git_id
+,table,code,manager,jpotvin@xalgorithms.org,,,,email
+,table,code,author,http://www.opman.ca/aboutus,,,,url
+,table,code,committer,jpotvin,,,,git_id
 VALUES,,,,,,,,
 ,,,,,us5uQgVJD5UFOQH,l'Essence Chez Bob,16.1,
 ,,,,,QRpOeZ7UXni9In5,Ultramar #122,11.3,

@@ -7,13 +7,15 @@ ABOUT THIS RULE,,,,,,,,,,
 ,rule,,jurisdiction,CA-QC,,,,,,ISO 3166-2 Governed by and construed in accordance with the laws of the named jurisdiction.
 ,rule,name,english,"Quebec, Fuel Tax Act, Border Region Tax Reduction, Retail",,,,,,
 ,rule,name,français,"Québec, Loi de la taxe sur les carburants, réduction fiscale de la région frontalière, détail",,,,,,
-,rule,,url,"http://legisquebec.gouv.qc.ca/en/ShowDoc/cr/T-1,%20r.%201#se:2r3",,,,,,
+,rule,url,english,"http://legisquebec.gouv.qc.ca/en/ShowDoc/cr/T-1,%20r.%201",,,,,,Official
+,rule,url,français,"http://legisquebec.gouv.qc.ca/fr/ShowDoc/cr/T-1,%20r.%201",,,,,,Official
+,rule,url,json,https://github.com/Xalgorithms/lichen-examples/tree/master/Fiscal%20Rules%20-%20R%C3%A8glements%20fiscaux/Tax%20-%20Imp%C3%B4ts/Revenue%20Quebec%20-%20Revenu%20Qu%C3%A9bec/Fuel%20Tax%20Act%20-%20La%20taxe%20sur%20les%20carburants,,,,,,Unofficial 
 ,rule,effective,starts,2017-01-01T00:00:00+00:01,,,,,,ISO 8601
 ,rule,effective,ends,9999-12-31T23:59:59+99:99,,,,,,ISO 8601
 ,rule,,criticality,3,,,,,,CA-QC_MJQ_RLRQ_RuleCriticality.json
-,rule,contact,manager,jpotvin@xalgorithms.org,,,,,,email
-,rule,contact,author,http://www.opman.ca/aboutus,,,,,,url
-,rule,contact,committer,jpotvin,,,,,,git_id
+,rule,code,manager,jpotvin@xalgorithms.org,,,,,,email
+,rule,code,author,http://www.opman.ca/aboutus,,,,,,url
+,rule,code,committer,jpotvin,,,,,,git_id
 METADATA REQUIRED,,,,,,,,,,
 ,context,,type,,,,,,,UBL DocumentType
 ,context,,jurisdiction,,,,,,,ISO 3166-2 in UBL PartyTaxScheme TaxScheme JurisdictionRegionAddress
@@ -33,7 +35,7 @@ VALUES TO FILTER,,,,,,,,,,
 ,seller,,industry,4730,,,,,,
 ,item,,classification,506505,,,,,,
 ,item,,quantity,GT 0,,,,,,
-,item,,unit,litres,,,,,,
+,item,,unit, ,,,,,,
 ACTIONS TO PERFORM,,,,,,,,,,
 ,,,,,obtain,input,transaction.party.seller.id,,,
 ,,,,,obtain,lookup,,CA-QC_MJQ_RLRQ_T-1_r1_2R3(a)_DistanceRegister.json,,
